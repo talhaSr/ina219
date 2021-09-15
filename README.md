@@ -5,7 +5,7 @@
 ## Description
 The INA219 is a current shunt and power monitor with an I2C- or SMBUS-compatible interface. The device monitors both shunt voltage drop and bus supply voltage, with programmable conversion times and filtering. A programmable calibration value, combined with an internal multiplier, enables direct readouts of current in amperes. An additional multiplying register calculates power in watts. The I2C- or SMBUS-compatible interface features 16 programmable addresses.
 The INA219 is available in two grades: A and B. The B grade version has higher accuracy and higher precision specifications.
-The INA219 senses across shunts on buses that can vary from 0 to 26 V. The device uses a single 3- to 5.5-V supply, drawing a maximum of 1 mA of supply current. The INA219 operates from –40°C to 125°C. For more check the datasheet: [`/doc/INA219_Datasheet.pdf`](./doc/INA219_Datasheet.pdf)
+The INA219 senses across shunts on buses that can vary from 0 to 26 V. The device uses a single 3- to 5.5-V supply, drawing a maximum of 1 mA of supply current. The INA219 operates from –40°C to 125°C. For more check the datasheet: [`/doc/LIS3MDL_Datasheet.pdf`](./doc/LIS3MDL_Datasheet.pdf)
 ## Features
 - Senses Bus Voltages from 0 to 26 V
 - Reports Current, Voltage, and Power
@@ -16,7 +16,7 @@ The INA219 senses across shunts on buses that can vary from 0 to 26 V. The devic
 - SOT23-8 and SOIC-8 Packages
 
 ## Pin Description
-![INA219](https://www.mouser.com/images/marketingid/2010/img/108575147.png?v=102720.0423)
+![INA219](./doc/ina219_img.png)
 ### SOT-23 Package
 |Pin #|Name|Desciption|
 |--|--|--|
