@@ -17,7 +17,7 @@ The INA219 senses across shunts on buses that can vary from 0 to 26 V. The devic
 
 ## Pin Description
 ![INA219](./doc/ina219_img.png)
-### SOT-23 Package
+### SOIC-8 Package
 |Pin #|Name|Desciption|
 |--|--|--|
 |1|IN+|Positive differential shunt voltage. Connect to positive side of shunt resistor.|
