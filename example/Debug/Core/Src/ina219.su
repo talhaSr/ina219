@@ -1,0 +1,10 @@
+ina219.c:15:17:_Read	32	static
+ina219.c:22:13:_Write	32	static
+ina219.c:54:17:INA219_Init	24	static
+ina219.c:89:6:INA219_GetBusVoltage	24	static
+ina219.c:95:6:INA219_GetShuntVoltage	24	static
+ina219.c:101:6:INA219_GetCurrent	16	static
+ina219.c:106:6:INA219_GetPower	16	static
+ina219.c:111:6:INA219_Reset	16	static
+ina219.c:116:6:INA219_SetCalibration	16	static
+ina219.c:121:6:INA219_SetConfiguration	16	static
