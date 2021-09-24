@@ -97,9 +97,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  INA219_GetCurrent(&sensor);
-	  printf("Current: %d\n", sensor.current);
-	  HAL_Delay(1000);
+	  INA219_GetCurrent(&sensor, &hi2c1);
+	  INA219_GetBusVoltage(&sensor, &hi2c1);
+	  INA219_GetPower(&sensor, &hi2c1);
+	  INA219_GetShuntVoltage(&sensor, &hi2c1);
+	  HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
