@@ -39,7 +39,6 @@
 
 /* Sensor Handler */
 typedef struct INA219 {
-	I2C_HandleTypeDef *i2c;
 	uint8_t address;
 	uint16_t shuntVoltage;
 	uint16_t busVoltage;
@@ -122,15 +121,15 @@ INA219_Status_t INA219_Init(INA219_t *sensor, I2C_HandleTypeDef *hi2c, uint8_t d
 INA219_Status_t INA219_Init(INA219_t *sensor, I2C_HandleTypeDef *hi2c, uint8_t deviceAddr);
 #endif
 
-void INA219_GetBusVoltage(INA219_t *sensor);
-void INA219_GetShuntVoltage(INA219_t *sensor);
-void INA219_GetCurrent(INA219_t *sensor);
-void INA219_GetPower(INA219_t *sensor);
+void INA219_GetBusVoltage(INA219_t *sensor, I2C_HandleTypeDef *hi2c);
+void INA219_GetShuntVoltage(INA219_t *sensor, I2C_HandleTypeDef *hi2c);
+void INA219_GetCurrent(INA219_t *sensor, I2C_HandleTypeDef *hi2c);
+void INA219_GetPower(INA219_t *sensor, I2C_HandleTypeDef *hi2c);
 
-void INA219_Reset(INA219_t *sensor);
+void INA219_Reset(INA219_t *sensor, I2C_HandleTypeDef *hi2c);
 
-void INA219_SetCalibration(INA219_t *sensor, uint16_t calibration);
-void INA219_SetConfiguration(INA219_t *sensor, uint16_t config);
+void INA219_SetCalibration(INA219_t *sensor, I2C_HandleTypeDef *hi2c, uint16_t calibration);
+void INA219_SetConfiguration(INA219_t *sensor, I2C_HandleTypeDef *hi2c, uint16_t config);
 
 
 #endif /* INC_INA219_H_ */
